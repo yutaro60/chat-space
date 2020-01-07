@@ -1,0 +1,31 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+        aaa
+      .main-header__left-box__member-list
+        Member:
+        .main-header__left-box__member-list__member
+          aaaa
+    .main-header__edit-btn
+      =link_to "#" do
+        Edit
+  .message
+    .message__info
+      .message__info-taker
+        eeee
+      .message__info-date
+        2020/04/07(Mon) 20:20:20
+    .message__text
+      wwwwwwwwww
+  .form
+    .form__message
+      .form__message-box
+        type a message
+        .form__message-box__icon
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file"}
+
+      .form__message-send
+        Send
